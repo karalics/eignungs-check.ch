@@ -13,7 +13,7 @@
         if ($(window).scrollTop() > 50) {
             $('.header_style_01').addClass('fixed-menu');
         } else {
-            $('.header_style_01').removeClass('fixed-menu');
+            /*$('.header_style_01').removeClass('fixed-menu');*/
         }
     });
 

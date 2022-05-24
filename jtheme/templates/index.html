@@ -8,6 +8,11 @@
 <li class="active">{% trans "Home" %}</li>
 {% endblock %}
 
+
+{% block before_main %}
+{% endblock %}
+
+
 {% block main %}
 {% blocktrans %}
 <ul class='slideshow'>
@@ -28,6 +33,7 @@
     <div class="parallax first-section">
         <div class="container">
             <div class="row">
+                <!--
                 <div class="col-md-6 wow slideInLeft hidden-xs hidden-sm">
                     <div class="contact_form">
                         <h3><i class="fa fa-envelope-o grd1 global-radius"></i> QUICK APPOINTMENT</h3>
@@ -68,124 +74,144 @@
                         </form>
                     </div>
                 </div>
-				<div class="col-md-6 col-sm-12">
-                    <div class="big-tagline clearfix">
-                        <h2>Sell Your Property with CITY Real Estate</h2>
-                        <p class="lead">With CITY Real Estate responsive landing page template, you can promote your all property & real estate projects. </p>
-                        <a data-scroll href="#gallery" class="btn btn-light btn-radius grd1 btn-brd">View Gallery</a>
+            -->
+				<div class="col-md-12 col-sm-12">
+                    <div class="big-tagline clearfix" style="padding-top:300px">
+                        <h2 style="text-align: center;">Neue Herausforderung?</h2>
+                        <p class="lead"></p>
+                        <div class="row">
+                            <div class="col-md-6">
+                        <a href="/berufswahl-studienberatung/" class="jtheme-button width-full text-center" >Berufs- & Studienwahl, Berufliche VeränderungCoaching</a></div>
+                            <div class="col-md-6">
+                        <a href="#gallery" class="jtheme-button width-full text-center">MarginEinzelcoaching - & Business Coaching</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
+            </div>
+        </div>
+    </div>
 	
 	<div class="about-box">
 		<div class="container">
 			<div class="row">
-				<div class="top-feature owl-carousel owl-theme">
-					<div class="item">
+				<div class="col-md-3 text-center">
 						<div class="single-feature">
-							<div class="icon"><img src="uploads/icon-01.png" class="img-responsive" alt=""></div>
-							<h4><a href="#">Full Furnished</a></h4>
-							<p>Mauris eu porta orci. In at erat enim. Suspendisse felis erat, volutpat at nisl sit amet, maximus molestie nisi. </p>
+							
+							<h4><a href="#">BERUFSBERATUNG</a></h4>
+							<p>Die Wahl des passenden Berufs ist eine richtungsweisende Wahl. Doch welcher Beruf passt zu mir und meinen individuellen Talenten, Eignungen und Persönlichkeitsmerkmalen? Gerne berate ich Sie.<br><br><br><br>
+                                <a href="/" class="jtheme-button">mehr erfahren..</a></p>
 						</div> 
 					</div>
-					<div class="item">
+                <div class="col-md-3 text-center">
 						<div class="single-feature">
-							<div class="icon"><img src="uploads/icon-02.png" class="img-responsive" alt=""></div>
-							<h4><a href="#">Living Inside a Nature</a></h4>
-							<p>Mauris eu porta orci. In at erat enim. Suspendisse felis erat, volutpat at nisl sit amet, maximus molestie nisi.</p>
+							
+							<h4><a href="#">STUDIENBERATUNG</a></h4>
+							<p>Die Zahl der Bachelor und Master Studiengänge an Universitäten und Fachhochschulen steigt stetig. Gerne berate ich Sie, welches Studium am besten zu ihren Fähigkeiten passt.<br><br><br><br><br><a href="/" class="jtheme-button">mehr erfahren..</a></p>
 						</div> 
 					</div>
-					<div class="item">
+           
+                <div class="col-md-3 text-center">
 						<div class="single-feature">
-							<div class="icon"><img src="uploads/icon-03.png" class="img-responsive" alt=""></div>
-							<h4><a href="#">Luxurious Fittings</a></h4>
-							<p>Mauris eu porta orci. In at erat enim. Suspendisse felis erat, volutpat at nisl sit amet, maximus molestie nisi. </p>
+							
+							<h4><a href="#">WEITERBILDUNG</a></h4>
+							<p>Sie fragen sich, welche Weiterbildung ist für meine Karriere förderlich? Bei der grossen Auswahl und den vielen Möglichkeiten die heute angeboten werden, ist es wichtig sich für die richtige Weiterbildung zu entscheiden.<br><br><br><a href="/" class="jtheme-button">mehr erfahren..</a></p>
 						</div> 
 					</div>
-					<div class="item">
+               
+                <div class="col-md-3 text-center">
 						<div class="single-feature">
-							<div class="icon"><img src="uploads/icon-04.png" class="img-responsive" alt=""></div>
-							<h4><a href="#">Non Stop Security</a></h4>
-							<p>Lorem Is a dummy Mauris eu porta orci. In at erat enim. Suspendisse felis erat, volutpat at nisl sit amet, maximus molestie nisi. </p>
+							
+							<h4><a href="#" >COACHING</a></h4>
+							<p>Sie wollen sich weiter entwickeln? Sich besser verstehen und steuern? Damit Sie in den entscheidenden Momenten des Berufslebens richtig handeln und sich erfolgreich zur Geltung bringen. Gerne begleite ich Sie auf Ihrem Weg.<br><br><a href="/" class="jtheme-button">mehr erfahren..</a></p>
 						</div> 
 					</div>
-				</div>
-			</div>
-			
-			<hr class="hr1">
-			
-			<div class="row">
-				<div class="col-md-6">
-                    <div class="post-media wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <img src="uploads/about_bg.jpg" alt="" class="img-responsive">                        
-                    </div><!-- end media -->
                 </div>
-				<div class="col-md-6">
-					<div class="message-box right-ab">
-                        <h4>Awards Winning Real Estate Company</h4>
-                        <h2>Welcome to CITY Real Estate</h2>
-                        <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
-						<p>Aenean eleifend in felis id viverra. Vestibulum semper ex eu molestie pulvinar. Maecenas non efficitur metus, et semper sem. Mauris ligula sapien, gravida a scelerisque ut, vehicula sed mauris. Proin dapibus mi id vulputate euismod. Nam ullamcorper dui tellus, non lacinia lorem hendrerit eu. Donec at orci cursus, rutrum metus eget, cursus turpis.  </p>
-						<a href="#" class="btn btn-light btn-radius grd1 btn-brd"> Read More </a>
-                    </div>
 				</div>
 			</div>
+						
 			
-		</div>
-	</div>
 
-    <div id="agent" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_02.png');">
+    <div id="agent" class="parallax section db parallax-off" style="background-image:url('/static/uploads/parallax_02.png');">
         <div class="container">
             <div class="section-title row text-center">
                 <div class="col-md-8 col-md-offset-2">
-                    <h3>Agent Details</h3>
-                    <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
-                </div><!-- end col -->
-            </div><!-- end title -->
+                    <h3>JACQUELINE BURKHARD</h3>
+                    <p class="lead">GPI® Coach – GPI® Team Coach</p> 
+                    <p class="lead">Betrieblicher Mentor</p>
+                    <p class="lead">dipl. Psychophysiognomin CHA</p>
+                </div>
+            </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">
-                        <h4>The Agent</h4>
-                        <h2>Jenny Martines</h2>
-                        <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
-
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-
-                        <a href="#contact" data-scroll class="btn btn-light global-radius btn-brd grd1 effect-1">Contact Me</a>
-                    </div><!-- end messagebox -->
-                </div><!-- end col -->
-				<div class="col-md-3">
-                    <div class="post-media wow fadeIn">
-                        <img src="uploads/agent.jpg" alt="" class="img-responsive">
-                        <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
-                    </div><!-- end media -->
-                </div><!-- end col -->
-                <div class="col-md-3">
+            <div class="row text-center">
+                <div class="col-md-4">
                     <div class="agencies_meta clearfix">
-                        <span><i class="fa fa-envelope "></i> <a href="mailto:support@sitename.com">support@sitename.com</a></span>
-                        <span><i class="fa fa-link "></i> <a href="#">www.sitename.com</a></span>
-                        <span><i class="fa fa-phone-square "></i> +1 232 444 55 66</span>
-                        <span><i class="fa fa-print "></i> +1 232 444 55 66</span>
-                        <span><i class="fa fa-facebook-square "></i> <a href="#">facebook.com/tagline</a></span>
-                        <span><i class="fa fa-twitter-square "></i> <a href="#">twitter.com/tagline</a></span>
-                        <span><i class="fa fa-linkedin-square "></i> <a href="#">linkedin.com/tagline</a></span>
-                    </div><!-- end agencies_meta -->
-                </div><!-- end col -->
-            </div><!-- end row -->
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p class="lead">QUALIFIKATION</p>
+                        <p>&nbsp;</p>
+                        <p class="lead">Certificate of Advanced Studies (CAS) Kalaidos FH in Business Coaching</p>
+                        <p class="lead">dipl. Psychophysiognomin CHA</p>
+                         <p>&nbsp;</p>
+
+                    </div>
+                </div>
+				<div class="col-md-4">
+                    <div class="post-media wow fadeIn">
+                        <img src="/static/images/jacqueline.jpg" alt="" class="img-responsive">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="agencies_meta clearfix">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p class="lead">KONTAKT</p>
+                        <p>&nbsp;</p>
+                        <address>
+                        <p class="lead">Mellingerstrasse 6<br />
+                        5400 Baden<br />
+                        <i class="fa fa-envelope "></i>&nbsp;&nbsp;jb@eignungs-check.ch<br />
+                        <i class="fa fa-phone-square "></i>&nbsp;&nbsp;+41 79 579 33 09</p>
+                        </address>
+                        <a href="/kontakt" data-scroll class="jtheme-button">zum Kontaktformular</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <div class="row">
+                <!--
+                <div class="col-md-4">
+                    <div class="post-media wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <img src="/static/uploads/about_bg.jpg" alt="" class="img-responsive">                        
+                    </div>
+                </div>
+            -->
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <div class="message-box right-ab">
+                        <p>&nbsp;</p>
+                        <h4>Was können Sie erwarten?</h4>
+                        <h2>WIE ICH ARBEITE</h2>
+                        <p>Mit dem Test- und Auswertungsverfahren „Grundrichtungen der Persönlichkeit GPI®“ von Coachingplus GmbH biete ich meinen Kunden einen interessanten Test an, in dem das individuelle Handeln nachvollziehbar aufgedeckt wird. Darin werden Stärken und Konfliktsituationen sichtbar.</p><p> Die gewonnenen Erkenntnisse verhelfen dem Kunden, neue Strategien und Vorgehensweisen in seinem Lebensalltag  erfolgreich zu integrieren. </p><p>Ich arbeite zudem anhand von Psychophysiognomik und psychologischen Tests. Die Psychophysiognomik beschäftigt sich mit dem Menschen in seinem Handeln, Denken und Verhalten. Dabei werden alle Ausdrucksmöglichkeiten, die Form und Farbe wie auch die Bewegung, die Mimik, die Gestik, die Körpersprache, die Sprache, die Schrift, Zeichnungen, Lebenslauf und sonstige Leistungen in den Bereich ihrer Untersuchung mit einbezogen. Es ist auch die moderne Körper-, Kopf-, Gesichts- und Augenausdruckslehre.</p>
+                        <a href="#" class="btn btn-light btn-radius grd1 btn-brd">Weiter lesen</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+<!--
     <div id="testimonials" class="section lb">
         <div class="container">
             <div class="section-title row text-center">
                 <div class="col-md-8 col-md-offset-2">
                     <h3>Happy Customers</h3>
                     <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
-                </div><!-- end col -->
-            </div><!-- end title -->
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -197,12 +223,12 @@
 								
                             </div>
                             <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
+                                <img src="/static/uploads/testi_01.png" alt="" class="img-responsive alignleft">
                                 <h4>James Fernando <small>- Manager of Racer</small></h4>
                             </div>
-                            <!-- end testi-meta -->
+                            
                         </div>
-                        <!-- end testimonial -->
+                       
 
                         <div class="testimonial clearfix">
                             <div class="desc">
@@ -210,50 +236,48 @@
                                 <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
                             </div>
                             <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-responsive alignleft">
+                                <img src="/static/uploads/testi_02.png" alt="" class="img-responsive alignleft">
                                 <h4>Jacques Philips <small>- Designer</small></h4>
                             </div>
-                            <!-- end testi-meta -->
+                         
                         </div>
-                        <!-- end testimonial -->
-
+                       
                         <div class="testimonial clearfix">
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Great & Talented Team! <i class="fa fa-quote-right"></i></h3>
                                 <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
                             </div>
                             <div class="testi-meta">
-                                <img src="uploads/testi_03.png" alt="" class="img-responsive alignleft">
+                                <img src="/static/uploads/testi_03.png" alt="" class="img-responsive alignleft">
                                 <h4>Venanda Mercy <small>- Newyork City</small></h4>
                             </div>
-                            <!-- end testi-meta -->
+                           
                         </div>
-                        <!-- end testimonial -->
+                     
                         <div class="testimonial clearfix">
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Wonderful Support! <i class="fa fa-quote-right"></i></h3>
                                 <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
                             </div>
                             <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
+                                <img src="/static/uploads/testi_01.png" alt="" class="img-responsive alignleft">
                                 <h4>James Fernando <small>- Manager of Racer</small></h4>
                             </div>
-                            <!-- end testi-meta -->
+                           
                         </div>
-                        <!-- end testimonial -->
-
+                        
                         <div class="testimonial clearfix">
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Awesome Services! <i class="fa fa-quote-right"></i></h3>
                                 <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
                             </div>
                             <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-responsive alignleft">
+                                <img src="/static/uploads/testi_02.png" alt="" class="img-responsive alignleft">
                                 <h4>Jacques Philips <small>- Designer</small></h4>
                             </div>
-                            <!-- end testi-meta -->
+                           
                         </div>
-                        <!-- end testimonial -->
+                        
 
                         <div class="testimonial clearfix">
                             <div class="desc">
@@ -261,98 +285,22 @@
                                 <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
                             </div>
                             <div class="testi-meta">
-                                <img src="uploads/testi_03.png" alt="" class="img-responsive alignleft">
+                                <img src="/static/uploads/testi_03.png" alt="" class="img-responsive alignleft">
                                 <h4>Venanda Mercy <small>- Newyork City</small></h4>
                             </div>
-                            <!-- end testi-meta -->
-                        </div><!-- end testimonial -->
-                    </div><!-- end carousel -->
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <img src="images/logos/logo-realestate.png" alt="">
+                           
                         </div>
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
-                        <p>Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-
-                <div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Info Link</h3>
-                        </div>
-
-                        <ul class="twitter-widget footer-links">
-                            <li><a href="#"> Home </a></li>
-                            <li><a href="#"> About Us </a></li>
-                            <li><a href="#"> Services</a></li>
-							<li><a href="#"> Gallery</a></li>
-							<li><a href="#"> Properties</a></li>
-							<li><a href="#"> Contact</a></li>
-                        </ul><!-- end links -->
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-				
-				<div class="col-md-3 col-sm-3 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Contact Details</h3>
-                        </div>
-
-                        <ul class="footer-links">
-                            <li><a href="mailto:#">info@yoursite.com</a></li>
-                            <li><a href="#">www.yoursite.com</a></li>
-                            <li>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
-                            <li>+61 3 8376 6284</li>
-                        </ul><!-- end links -->
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-				
-                <div class="col-md-2 col-sm-2 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Social</h3>
-                        </div>
-                        <ul class="footer-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fa fa-github"></i> Github</a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i> Dribbble</a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i> Pinterest</a></li>
-                        </ul><!-- end links -->
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-				
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </footer><!-- end footer -->
-
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-left">
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">City Real Estate</a> Design By : <a href="https://html.design/">html design</a></p>
-                </div>
-
-                <div class="footer-right">
-                    <form method="get" action="#">
-                        <input placeholder="Subscribe our newsletter.." name="search">
-                        <i class="fa fa-envelope-o"></i>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div><!-- end container -->
-    </div><!-- end copyrights -->
+        </div>
+    </div>
+-->
 
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 {% endblocktrans %}
 {% endblock %}
+
+{% block after_main %}
+{% endblock %}
+
+

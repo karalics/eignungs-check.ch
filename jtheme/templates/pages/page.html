@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load mezzanine_tags keyword_tags %}
+{% load mezzanine_tags keyword_tags pages_tags %}
 
 {% block meta_title %}{{ page.meta_title }}{% endblock %}
 
@@ -15,9 +15,47 @@
 {{ page.description }}
 {% endmetablock %}{% endblock %}
 
-{% block title %}
-{% editable page.title %}{{ page.title }}{% endeditable %}
+
+
+                
+
+
+
+{% block before_main %}
+<div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+<h2>{% block title %}
+    {% editable page.title %}{{ page.title }}{% endeditable %}
+    {% endblock %}
+</h2>
+
+<nav id="breadcrumbs">
+    <ul>
+        {% spaceless %}
+        {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
+        {% endspaceless %}
+    </ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+    <div class="container" style="margin-top:50px;">
+        <div class="row">
+            <div class="col-md-12">
+
+{% endblock %}
+                    
+{% block main %}
 {% endblock %}
 
-{% block main %}
+{% block after_main %}
+</div>
+</div>
+</div>
+</div>
 {% endblock %}
