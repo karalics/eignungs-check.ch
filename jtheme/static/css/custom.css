@@ -1,6 +1,11 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
 
+p img {
+    max-width: 100%;
+    height: auto;
+}
+
 .jtheme-button {
     display: block;
     background: #182983;
