@@ -2367,7 +2367,7 @@ select.mobile-device {
 }
 
 .footer-distributed .footer-company-name a:hover{
-	color: #182983;
+	color: #E7D67C;
 }
 
 
@@ -2611,11 +2611,18 @@ select.mobile-device {
 	padding: 0px;
 	font-size: 40px;
 	font-weight: 600;
+
+}
+
+@media (max-width: 1200px) {
+    .all-title-box h2 {
+        max-width: 400px;
+    }
 }
 
 #breadcrumbs {
 	background: #182983;
-	padding: 10px 20px;
+	padding: 10px 10px 10px 10px;
     position: absolute;
     right: 0px;
     display: inline-block;
@@ -2640,6 +2647,11 @@ select.mobile-device {
     list-style: none;
     margin: 0 0 0 10px;
 	color: #ffffff;
+}
+
+#breadcrumbs:hover ul li {
+
+    color: #000000;
 }
 
 #breadcrumbs ul li a {
