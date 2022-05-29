@@ -1892,8 +1892,15 @@ hr.invis1 {
 
 .dropdown-menu > li > a {
     background-color: transparent !important;
-    color: #182983 !important;
+    color: black !important;
     font-size: 15px;
+    padding: 10px 20px;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: transparent !important;
+    color: white !important;
+    font-size: 12px;
     padding: 10px 20px;
 }
 

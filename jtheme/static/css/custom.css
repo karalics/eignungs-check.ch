@@ -133,7 +133,7 @@ p img {
   top: 0px;
   right: 90px;
   width: 0px;
-  height: 60px;
+  height: 30px;
   line-height: 60px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   border-top:4px solid #182983;
@@ -154,8 +154,9 @@ p img {
 .togglesearch input[type="text"]{
   color: black;
   width: 20%;
+  height: 40px;
   position: fixed;
-  top: 0px;
+  top: 17px;
   right: 11%;
   padding: 5px 10px;
   /*margin-left: 23px;*/
@@ -165,16 +166,17 @@ p img {
 .togglesearch input[type="submit"]{
   position: fixed;
   
-  top: 0px;
+  top: 17px;
   right: 6%;
   width: 86px;
-  padding: 5px 0;
+  height: 40px;
   background: #182983;
   color: #fff;
   margin-left: -6px;
   border: 1px solid #182983;
   outline: none;
   cursor: pointer;
+  line-height: 2px;
 }
 
 /*############################
@@ -185,8 +187,8 @@ p img {
 .togglesearch{
   background: #E8E8E4;
   position: fixed;
-  top: 0px;
-  left: 40px;
+  top: 17px;
+  left: 4px;
   width: 0px;
   height: 60px;
   line-height: 60px;
@@ -209,8 +211,9 @@ p img {
 .togglesearch input[type="text"]{
   color: black;
   width: 50%;
+  height: 50px;
   position: fixed;
-  top: 0px;
+  top: 17px;
   left: 40px;
   padding: 5px 10px;
   /*margin-left: 23px;*/
@@ -220,9 +223,10 @@ p img {
 .togglesearch input[type="submit"]{
   position: fixed;
   
-  top: 0px;
+  top: 17px;
   left: 50%;
   width: 86px;
+  height: 50px;
   padding: 5px 0;
   background: #182983;
   color: #fff;
@@ -230,6 +234,7 @@ p img {
   border: 1px solid #182983;
   outline: none;
   cursor: pointer;
+  line-height: 2px;
 }
 
 
