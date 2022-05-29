@@ -3,53 +3,84 @@
 {% load i18n mezzanine_tags %}
 
 {% block meta_title %}{% trans "Search Results" %}{% endblock %}
-{% block title %}{% trans "Search Results" %}{% endblock %}
 {% block extra_head %}
 <meta name="robots" content="noindex">
 {% endblock %}
 
-{% block breadcrumb_menu %}
-<li>
-    <a href="{% url "home" %}">{% trans "Home" %}</a>
-</li>
-<li class="active">{% trans "Search Results" %}</li>
+{% block before_main %}
+<div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+<h2>{% block title %}
+{% if results.paginator.count == 0 %}
+
+    Keine Resultate gefunden für: {{ query }}
+{% else %}
+    Resultate der Suchanfrage: {{ query }}
+{% endif %}
+    {% endblock %}
+
+</h2>
+
+<nav id="breadcrumbs">
+    <ul>
+      <li>
+{% if results.paginator.count == 0 %}
+    
+0/0
+{% else %}
+{% blocktrans with start=results.start_index end=results.end_index total=results.paginator.count %}
+Resultate {{ start }} bis {{ end }} von {{ total }}
+{% endblocktrans %}
+{% endif %}
+      </li>
+    </ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+    <div class="container" style="margin-top:50px;">
+        <div class="row">
+            <div class="col-md-12">
+
 {% endblock %}
 
 {% block main %}
 
-<p>
-{% if results.paginator.count == 0 %}
-{% blocktrans %}
-No results were found in {{ search_type }} matching your query: {{ query }}
-{% endblocktrans %}
-{% else %}
-{% blocktrans with start=results.start_index end=results.end_index total=results.paginator.count %}
-Showing {{ start }} to {{ end }} of {{ total }} results in {{ search_type }} matching your query: {{ query }}
-{% endblocktrans %}
-{% endif %}
-</p>
 
 <div id="search-results">
 {% for result in results.object_list %}
 {% with result.get_absolute_url as result_url %}
-    <h5>
+    <h2>
         {{ forloop.counter0|add:results.start_index }})
         {% if result_url %}
             <a href="{{ result_url }}">{{ result }}</a>
         {% else %}
             {{ result }}
         {% endif %}
-    </h5>
+    </h2>
     {% if result.description != result|stringformat:"s" %}
         <p>{{ result.description|truncatewords_html:20|safe }}</p>
     {% endif %}
     {% if result_url %}
-        <a href="{{ result_url }}">{% trans "read more" %}</a>
+        <a href="{{ result_url }}">mehr erfahren..</a>
     {% endif %}
 {% endwith %}
 {% endfor %}
 </div>
 
 {% pagination_for results %}
-
+<p>&nbsp;</p>
 {% endblock %}
+
+{% block after_main %}
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
+

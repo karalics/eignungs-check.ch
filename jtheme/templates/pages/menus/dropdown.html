@@ -27,11 +27,16 @@
     {% endfor %}
     <li><a href="#"><i class="fa fa-linkedin global-radius"></i></a></li>
     <li class="search-option">
-        <button class="search tran3s dropdown-toggle" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>
-        <form action="#" class="p-color-bg dropdown-menu tran3s" aria-labelledby="searchDropdown">
-            <input type="text" placeholder="Search....">
-            <button><i class="fa fa-search" aria-hidden="true"></i></button>
-        </form>
+        <a>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+         <div class="togglesearch">
+            <form action="/search/" role="search">
+                <input type="text" placeholder="" name="q"/>
+                <input type="submit" value="Suche"/>
+            </form>
+        </div>
+
     </li>
 </ul>
 

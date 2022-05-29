@@ -120,6 +120,53 @@ p img {
     background-color: white;
 }
 
+/*############################
+   HIDDEN SEACH
+#############################*/
+
+.togglesearch{
+  background: #E8E8E4;
+  position: absolute;
+  top: 54px;
+  right: -20px;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #182983;
+  display: none;
+}
+.togglesearch:before{
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #182983;
+}
+.togglesearch input[type="text"]{
+  color: black;
+  width: 270px;
+  position: relative;
+  padding: 5px 10px;
+  /*margin-left: 23px;*/
+  border: 1px solid #182983;
+  outline: none;
+}
+.togglesearch input[type="submit"]{
+
+  width: 86px;
+  padding: 5px 0;
+  background: #182983;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #182983;
+  outline: none;
+  cursor: pointer;
+}
+
 /*========================================
             MEZZANINE FORMS
 ==========================================
@@ -280,4 +327,19 @@ float the buttons inside it. This prevents collapsing. */
 
 .form-actions:after {
   clear: both;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    color:  #fff;
+    background-color: #182983;
+    border-color:  #182983;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+
+    color:  #182983;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color:  #182983;
 }

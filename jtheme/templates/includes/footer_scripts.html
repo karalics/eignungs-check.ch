@@ -15,6 +15,7 @@ ga('send', 'pageview');
 {% endif %}
 
 <!-- ALL JS FILES -->
+    <script>var exports = {};</script>
     <script src="/static/js/all.js"></script>
     <!-- ALL PLUGINS -->
     <script src="/static/js/custom.js"></script>
@@ -23,3 +24,11 @@ ga('send', 'pageview');
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
    <!-- MAP & CONTACT -->
     <script src="/static/js/map.js"></script>
+    <script>
+    $(document).ready(function() {
+    $(".fa-search").click(function() {
+       $(".togglesearch").toggle();
+       $("input[type='text']").focus();
+            });
+        });
+    </script>
