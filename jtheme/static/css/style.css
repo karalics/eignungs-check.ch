@@ -2647,7 +2647,7 @@ select.mobile-device {
 }
 
 #breadcrumbs ul {
-    margin: 0;
+    margin-left: -45px;
 }
 #breadcrumbs ul li {
     display: inline-block;
