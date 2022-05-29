@@ -419,3 +419,7 @@ float the buttons inside it. This prevents collapsing. */
 .pagination > li > a, .pagination > li > span {
     color:  #182983;
 }
+
+li .active {
+    background-color: #e7e7e7;
+}
