@@ -127,8 +127,8 @@ p img {
 .togglesearch{
   background: #E8E8E4;
   position: absolute;
-  top: 54px;
-  right: -20px;
+  top: -15px;
+  right: 50px;
   width: 350px;
   height: 60px;
   line-height: 60px;
@@ -141,10 +141,10 @@ p img {
   position: absolute;
   top: -32px;
   right: 13px;
-  border-left: 12px solid transparent;
+  /*border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   border-top: 14px solid transparent;
-  border-bottom: 14px solid #182983;
+  border-bottom: 14px solid #182983;*/
 }
 .togglesearch input[type="text"]{
   color: black;
