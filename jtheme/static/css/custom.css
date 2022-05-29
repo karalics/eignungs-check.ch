@@ -120,43 +120,53 @@ p img {
     background-color: white;
 }
 
+
+
+
 /*############################
    HIDDEN SEACH
 #############################*/
 
 .togglesearch{
   background: #E8E8E4;
-  position: absolute;
-  top: -15px;
-  right: 50px;
-  width: 350px;
+  position: fixed;
+  top: 0px;
+  right: 90px;
+  width: 0px;
   height: 60px;
   line-height: 60px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   border-top:4px solid #182983;
   display: none;
 }
+/*
 .togglesearch:before{
   content: "";
   position: absolute;
   top: -32px;
   right: 13px;
-  /*border-left: 12px solid transparent;
+  border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   border-top: 14px solid transparent;
-  border-bottom: 14px solid #182983;*/
+  border-bottom: 14px solid #182983;
 }
+*/
 .togglesearch input[type="text"]{
   color: black;
-  width: 270px;
-  position: relative;
+  width: 20%;
+  position: fixed;
+  top: 0px;
+  right: 11%;
   padding: 5px 10px;
   /*margin-left: 23px;*/
   border: 1px solid #182983;
   outline: none;
 }
 .togglesearch input[type="submit"]{
-
+  position: fixed;
+  
+  top: 0px;
+  right: 6%;
   width: 86px;
   padding: 5px 0;
   background: #182983;
@@ -166,6 +176,67 @@ p img {
   outline: none;
   cursor: pointer;
 }
+
+/*############################
+   HIDDEN SEACH MOBILE
+#############################*/
+
+@media (max-width: 1000px) {
+.togglesearch{
+  background: #E8E8E4;
+  position: fixed;
+  top: 0px;
+  left: 40px;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #182983;
+  display: none;
+}
+/*
+.togglesearch:before{
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #182983;
+}
+*/
+.togglesearch input[type="text"]{
+  color: black;
+  width: 50%;
+  position: fixed;
+  top: 0px;
+  left: 40px;
+  padding: 5px 10px;
+  /*margin-left: 23px;*/
+  border: 1px solid #182983;
+  outline: none;
+}
+.togglesearch input[type="submit"]{
+  position: fixed;
+  
+  top: 0px;
+  left: 50%;
+  width: 86px;
+  padding: 5px 0;
+  background: #182983;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #182983;
+  outline: none;
+  cursor: pointer;
+}
+
+
+}
+
+
+
 
 /*========================================
             MEZZANINE FORMS
